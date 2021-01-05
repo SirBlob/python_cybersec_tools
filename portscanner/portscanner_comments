@@ -1,0 +1,60 @@
+# Based on udemy course The Complete Python Hacking Course: Beginner to Advanced
+# ! Requires python 3.6 and up
+
+from socket import  * #Imports everything from socket library
+from threading import * #Imports everything from threading library
+# ! Replaced with argparse -> import optparse as opt #Import parsing #deprecated
+import argparse as argp
+from termcolor import colored as clrd #Import color text to the output, not neccessary but helps easily seeing the data
+
+def connScan(tgtHost, tgtPort): # Note: Does the port scanning
+    try:
+        sock = socket(AF_INET, SOCK_STREAM) #Address Family INET and the type of socket to  use in this case stream
+        sock.connect((tgtHost, tgtPort)) #connect to remote socket at the host and port
+        print(clrd(f"[+] Port {tgtPort} for tcp is Open", 'green'))
+    except:
+        print(clrd(f"[-] Port {tgtPort} for tcp is Closed", 'red'))
+    finally: #Executes regardless if try and except worked
+        sock.close() #close the connection regardless of status (working or error)
+
+def portScan(tgtHost, tgtPorts): # Note: Does the Parsing and Threading if multiple ports
+    try:
+        tgtIP = gethostbyname(tgtHost) #returns IP Address if given domain name (Example: Google.com) to machine readable IP
+    except:
+        print (f"Unknown Host {tgtHost} ")
+
+    try:
+        tgtName = gethostbyaddr(tgtIP) #returns name from IP
+        print (f"Scan Results for: {tgtName[0]}")
+    except:
+        print (f"Scan Results for: {tgtIP}")
+    setdefaulttimeout(1) #Default time out so port scan doesn't get stuck 
+    for tgtPort in tgtPorts: #Given multiple ports iterate through them
+        t = Thread(target=connScan, args=(tgtHost, int(tgtPort))) #multiple threads for each host and port
+        t.start() #starts a new thread
+
+def main():
+    # Note: Replace with argparse as Optparse is deprecated
+    #parser = opt.OptionParser("Usage of program: " + "-H <target host> -p <target port>")
+    #parser.add_option("-H", dest="tgtHost", type="string", help="Specify Target Host.")
+    #parser.add_option("-p", dest="tgtPort", type="string", help="Specify Target Port for multiple ports separate by comma.")
+    #(options, args) = parser.parse_args()
+    #tgtHost = options.tgtHost
+    #tgtPorts = str(options.tgtPort).split(",")
+
+    # ! argparse begin
+    parser = argp.ArgumentParser(description="Usage of program: " + "-H <target host> -p <target port>")
+    parser.add_argument("-H", "--Host", dest="tgtHost", metavar="", required=True, help="Specify Target Host.") #metavar cleans up output
+    parser.add_argument("-p", "--Port", dest="tgtPort", metavar="", required=True, help="Specify Target Port for multiple ports separate by comma.")
+    options = parser.parse_args()
+    tgtHost = options.tgtHost
+    tgtPorts = str(options.tgtPort).split(",")
+
+    if (tgtHost == None) | (tgtPorts[0] == None):
+        print(clrd(parser.usage, 'cyan'))
+        # Note: Outputs "Usage of program: -H <target host> -p <target port>" if no parameters attached
+        exit(0)
+    portScan(tgtHost, tgtPorts)
+
+if __name__ == "__main__":
+    main()
