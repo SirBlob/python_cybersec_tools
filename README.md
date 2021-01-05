@@ -23,3 +23,10 @@ Converted to Python 3
 Replaced optparse (deprecated) with argparse
 Colored Output
 ```
+
+2. Banner Grab (located in portscanner folder)
+```
+Banner Grabbing is a technique to gather information by sending a request to a system.
+If the port is open the system can reply back with information that can expose certain information.
+Which will allow the attacker to build off of to find exploits or determine another route to proceed.
+```
