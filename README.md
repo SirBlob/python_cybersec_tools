@@ -7,6 +7,9 @@ Tools for cybersecurity based on Udemy course "The Complete Python Hacking Cours
 Features:
 Multiport Scanning for a single IP Address or Host Name
 Arguement Handling
+
+------------------------------------------------------------
+./portscanner_clean.py --help
 ------------------------------------------------------------
 Usage of program: -H <target host> -p <target port>
 
