@@ -15,11 +15,13 @@ def returnBan(ip, port):
         return
 
 def main():
+    portlist= []
     ip = input("[*] Enter Target IP: ")
-    port = input("[*] Enter Target Port: ")
-    banner = returnBan(ip, port)
-    if banner:
-        print(f"[+] {ip}:{port} : {banner}")
+    portlist = [port for port in input("[*] Enter Target Port: ").split(",")] #list comprehension for multiple port inputs
+    for port in portlist:
+        banner = returnBan(ip, int(port))
+        if banner:
+            print(f"[+] {ip}:{port} : {banner}")
 
 if __name__ == "__main__":
     main()
