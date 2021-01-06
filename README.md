@@ -35,8 +35,10 @@ Multiport scan
 Uncomment #s = socket(AF_INET, SOCK_DGRAM) for UDP Banner Grab
 ```
 
-3. Scanner based on text file with patterns.
+3. Banner Scanner based on text file patterns.
 ```
+A port scanner that grabs the banner and checks the specified text file and tries to match the banner or vulnerability.
+
 [-] Usage: vulnscan_udemy.py <vuln filename>
 
 Features:
