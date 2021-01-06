@@ -2,7 +2,7 @@
 
 Tools for cybersecurity based on Udemy course "The Complete Python Hacking Course: Beginner to Advanced" by Joseph Delgadillo where I have updated the tools to a more modern format.
 
-1. Port Scanner
+1. **Port Scanner**
 ```
 Features:
 Multiport Scanning for a single IP Address or Host Name
@@ -24,7 +24,7 @@ Replaced optparse (deprecated) with argparse
 Colored Output
 ```
 
-2. Banner Grab (located in portscanner folder)
+2. **Banner Grab (located in portscanner folder)**
 ```
 Banner Grabbing is a technique to gather information by sending a request to a system.
 If the port is open the system can reply back with information that can expose certain information.
@@ -35,7 +35,7 @@ Multiport scan
 Uncomment #s = socket(AF_INET, SOCK_DGRAM) for UDP Banner Grab
 ```
 
-3. Banner Scanner based on text file patterns.
+3. **Vulnerable Banner Scanner**
 ```
 A port scanner that grabs the banner and checks the specified text file and tries to match the banner with known vulnerable banners.
 
