@@ -29,4 +29,8 @@ Colored Output
 Banner Grabbing is a technique to gather information by sending a request to a system.
 If the port is open the system can reply back with information that can expose certain information.
 Which will allow the attacker to build off of to find exploits or determine another route to proceed.
+
+Changes:
+Multiport scan
+Uncomment #s = socket(AF_INET, SOCK_DGRAM) for UDP Banner Grab
 ```
