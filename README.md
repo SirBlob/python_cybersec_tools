@@ -34,3 +34,12 @@ Changes:
 Multiport scan
 Uncomment #s = socket(AF_INET, SOCK_DGRAM) for UDP Banner Grab
 ```
+
+3. Scanner based on text file with patterns.
+```
+[-] Usage: vulnscan_udemy.py <vuln filename>
+
+Features:
+Multiport Input / Scan
+Colored Text Output
+```
