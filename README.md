@@ -49,10 +49,16 @@ Colored Text Output
 4. **SSH Login and Run Command**
 ```
 A python script ran on a windows system that SSH into a server with Host, Username, Password requested and runs a specified command.
+Using Netmiko module which is a add on to paramiko enhancing certain functionalities.
 
-Usage:
-Netmiko which is built off of parmiko
+------------------------------------------------------------
+./sshlog
+[*] Enter Target IP: 
+[*] Enter SSH User: 
+[*] Enter SSH Password: 
+[*] Enter command to run (; for multiple commands): 
+------------------------------------------------------------
 
 Problems:
-Takes a long time to connect around 7 seconds to just run that part so far tried global delay factor and fast cli with no luck otherwise works.
+Takes a long time to connect ~7 seconds : Tried fast cli, global delay factor (WIP)
 ```
