@@ -69,4 +69,7 @@ Bruteforce password attempts on ssh login, requires file named pass.txt which wi
 
 Cons:
 SSH Connection takes time to connect if correct password after researching apparently it is meant to be for reliability.
+
+WIP:
+Add input for file with password instead of hardcoding
 ```
