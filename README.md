@@ -24,7 +24,7 @@ Replaced optparse (deprecated) with argparse
 Colored Output
 ```
 
-2. **Banner Grab (located in portscanner folder)**
+1b. **Banner Grab (located in portscanner folder)**
 ```
 Banner Grabbing is a technique to gather information by sending a request to a system.
 If the port is open the system can reply back with information that can expose certain information.
@@ -35,7 +35,7 @@ Multiport scan
 Uncomment #s = socket(AF_INET, SOCK_DGRAM) for UDP Banner Grab
 ```
 
-3. **Vulnerable Banner Scanner**
+2. **Vulnerable Banner Scanner**
 ```
 A port scanner that grabs the banner and checks the specified text file and tries to match the banner with known vulnerable banners.
 
@@ -46,7 +46,7 @@ Multiport Input / Scan
 Colored Text Output
 ```
 
-4. **SSH Login and Run Command**
+3. **SSH Login and Run Command**
 ```
 A python script ran on a windows system that SSH into a server with Host, Username, Password requested and runs a specified command.
 Using Netmiko module which is a add on to paramiko enhancing certain functionalities.
@@ -61,4 +61,12 @@ Using Netmiko module which is a add on to paramiko enhancing certain functionali
 
 Problems:
 Takes a long time to connect ~7 seconds : Tried fast cli, global delay factor (WIP)
+```
+
+3b. **Bruteforce SSH Login** (located in sshlog folder)
+```
+Bruteforce password attempts on ssh login, requires file named pass.txt which will be used line by line as password.
+
+Cons:
+SSH Connection takes time to connect if correct password after researching apparently it is meant to be for reliability.
 ```
