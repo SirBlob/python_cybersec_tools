@@ -13,7 +13,7 @@ Tools for cybersecurity based on Udemy course "The Complete Python Hacking Cours
 
 ============================================
 
-#**Port Scanner**
+# **Port Scanner**
 ```
 Features:
 Multiport Scanning for a single IP Address or Host Name
@@ -35,7 +35,7 @@ Replaced optparse (deprecated) with argparse
 Colored Output
 ```
 
-#**Banner Grabber** (located in portscanner folder)
+# **Banner Grabber** (located in portscanner folder)
 ```
 Banner Grabbing is a technique to gather information by sending a request to a system.
 If the port is open the system can reply back with information that can expose certain information.
@@ -46,7 +46,7 @@ Multiport scan
 Uncomment #s = socket(AF_INET, SOCK_DGRAM) for UDP Banner Grab
 ```
 
-#**Vulnerable Banner Scanner**
+# **Vulnerable Banner Scanner**
 ```
 A port scanner that grabs the banner and checks the specified text file and tries to match the banner with known vulnerable banners.
 
@@ -57,7 +57,7 @@ Multiport Input / Scan
 Colored Text Output
 ```
 
-#**SSH Login and Run Command**
+# **SSH Login and Run Command**
 ```
 A python script ran on a windows system that SSH into a server with Host, Username, Password requested and runs a specified command.
 Using Netmiko module which is a add on to paramiko enhancing certain functionalities.
@@ -74,7 +74,7 @@ Problems:
 Takes a long time to connect ~7 seconds : Tried fast cli, global delay factor (WIP)
 ```
 
-#**Bruteforce SSH Login** (located in sshlog folder)
+# **Bruteforce SSH Login** (located in sshlog folder)
 ```
 Bruteforce password attempts on ssh login, requires file named pass.txt which will be used line by line as password.
 
@@ -85,12 +85,12 @@ WIP:
 Add input for file with password instead of hardcoding
 ```
 
-#**Anonymous FTP Login** (located in ftp_login folder)
+# **Anonymous FTP Login** (located in ftp_login folder)
 ```
 Attempts to login to the FTP anonymously which allows user access to the FTP without credentials besides the FTP IP Address.
 ```
 
-#**Bruteforce FTP Login** (located in ftp_login folder)
+# **Bruteforce FTP Login** (located in ftp_login folder)
 ```
 Bruteforce FTP login attempts using a specified text file which contains the username and password in this format user:pass.
 
