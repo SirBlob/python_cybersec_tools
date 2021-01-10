@@ -3,7 +3,7 @@
 Tools for cybersecurity based on Udemy course "The Complete Python Hacking Course: Beginner to Advanced" by Joseph Delgadillo where I have updated the tools to a more modern format.
 
 ## Glossary
-1. [Port Scanner](Port-Scanner)
+1. [Port Scanner](**Port-Scanner**)
 2. [Banner Grabber](Banner-Grabber)
 3. [Vulnerable Banner Scanner](Vulnerable-Banner-Scanner)
 4. [SSH Login and Run Command](SSH-Login-and-Run-Command)
