@@ -73,3 +73,27 @@ SSH Connection takes time to connect if correct password after researching appar
 WIP:
 Add input for file with password instead of hardcoding
 ```
+
+4. **Anonymous FTP Login** (located in ftp_login folder)
+```
+Attempts to login to the FTP anonymously which allows user access to the FTP without credentials besides the FTP IP Address.
+
+```
+4b. **Bruteforce FTP Login** (located in ftp_login folder)
+```
+Bruteforce FTP login attempts using a specified text file which contains the username and password in this format user:pass.
+
+Features:
+Colored Output to show success or failure
+
+Example:
+[*] Enter Target IP: 192.168.1.1
+[*] Enter User:Pass File Path: userpass.txt
+[@] Trying test1:test1.
+[@] Trying test2:test2.
+[@] Trying test3:test3.
+[@] Trying msfadmin1:msfadmin1.
+[@] Trying msfadmin:msfadmin.
+[+] user:pass FTP Login Succeeded.
+[!] test.txt doesn't exist!
+```
