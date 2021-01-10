@@ -3,13 +3,13 @@
 Tools for cybersecurity based on Udemy course "The Complete Python Hacking Course: Beginner to Advanced" by Joseph Delgadillo where I have updated the tools to a more modern format.
 
 ## Glossary
-1. [Port Scanner](**Port-Scanner**)
-2. [Banner Grabber](Banner-Grabber)
-3. [Vulnerable Banner Scanner](Vulnerable-Banner-Scanner)
-4. [SSH Login and Run Command](SSH-Login-and-Run-Command)
-5. [Bruteforce SSH Login](Bruteforce-SSH-Login)
-6. [Anonymous FTP Login](Anonymous-FTP-Login)
-7. [Bruteforce FTP Login](Bruteforce-FTP-Login)
+1. [Port Scanner](#port-scanner)
+2. [Banner Grabber](#banner-grabber-located-in-portscanner-folder)
+3. [Vulnerable Banner Scanner](#vulnerable-banner-scanner)
+4. [SSH Login and Run Command](#ssh-login-and-run-command)
+5. [Bruteforce SSH Login](#bruteforce-ssh-login-located-in-sshlog-folder)
+6. [Anonymous FTP Login](#anonymous-ftp-login-located-in-ftp_login-folder)
+7. [Bruteforce FTP Login](#bruteforce-ftp-login-located-in-ftp_login-folder)
 
 ============================================
 
