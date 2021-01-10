@@ -24,7 +24,7 @@ Replaced optparse (deprecated) with argparse
 Colored Output
 ```
 
-1b. **Banner Grab (located in portscanner folder)**
+1.b **Banner Grab (located in portscanner folder)**
 ```
 Banner Grabbing is a technique to gather information by sending a request to a system.
 If the port is open the system can reply back with information that can expose certain information.
@@ -63,7 +63,7 @@ Problems:
 Takes a long time to connect ~7 seconds : Tried fast cli, global delay factor (WIP)
 ```
 
-3b. **Bruteforce SSH Login** (located in sshlog folder)
+3.b **Bruteforce SSH Login** (located in sshlog folder)
 ```
 Bruteforce password attempts on ssh login, requires file named pass.txt which will be used line by line as password.
 
@@ -77,9 +77,9 @@ Add input for file with password instead of hardcoding
 4. **Anonymous FTP Login** (located in ftp_login folder)
 ```
 Attempts to login to the FTP anonymously which allows user access to the FTP without credentials besides the FTP IP Address.
-
 ```
-4b. **Bruteforce FTP Login** (located in ftp_login folder)
+
+4.b **Bruteforce FTP Login** (located in ftp_login folder)
 ```
 Bruteforce FTP login attempts using a specified text file which contains the username and password in this format user:pass.
 
