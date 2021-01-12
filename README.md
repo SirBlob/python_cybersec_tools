@@ -23,6 +23,7 @@ Features:
 Multiport Scanning for a single IP Address or Host Name
 Arguement Handling
 
+Example:
 ------------------------------------------------------------
 ./portscanner_clean.py --help
 ------------------------------------------------------------
@@ -67,7 +68,7 @@ A python script ran on a windows system that SSH into a server with Host, Userna
 Using Netmiko module which is a add on to paramiko enhancing certain functionalities.
 
 ------------------------------------------------------------
-./sshlog
+Example: ./sshlog
 [*] Enter Target IP: 
 [*] Enter SSH User: 
 [*] Enter SSH Password: 
@@ -143,7 +144,7 @@ Using a password list that contains the top 10000 passwords this python script w
 Features:
 Colored output
 
-Usage:
+Example:
 [*] Enter a SHA1 Hash Value: d6955d9721560531274cb8f50ff595a9bd39d66f
 [-] Password: 123456 doesn't match guess, continuing...
 [-] Password: password doesn't match guess, continuing... 
@@ -161,7 +162,7 @@ Using a password list from a specified file this python script will take a given
 Features:
 Colored output
 
-Usage:
+Example:
 [*] Enter a MD5 Hash Value: d1133275ee2118be63a577af759fc052
 [*] Enter the path of the password list: plist.txt
 [-] Trying Password: 123456 doesn't match, continuing...
