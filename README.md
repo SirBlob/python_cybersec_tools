@@ -12,6 +12,8 @@ Tools for cybersecurity based on Udemy course "The Complete Python Hacking Cours
 7. [Bruteforce FTP Login](#bruteforce-ftp-login-located-in-ftp_login-folder)
 8. [Hash Simple](#hash-simple)
 9. [Hash ForLoop](#hash-forloop-located-in-hash-folder)
+10. [Hash SHA1 Cracker](#hash-sha1-cracker-located-in-hash-folder)
+11. [Hash MD5 Cracker](#hash-md5-cracker-located-in-hash-folder)
 
 ============================================
 
@@ -123,6 +125,7 @@ SHA224 hash value: 90a3ed9e32b2aaf4c61c410eb925426119e1a9dc53d4286ade99a809
 SHA256 hash value: 9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08
 SHA512 hash value: ee26b0dd4af7e749aa1a8ee3c10ae9923f618980772e473f8819a5d4940e0db27ac185f8a0e1d5f84f88bc887fd67b143732c304cc5fa9ad8e6f57f50028a8ff
 ```
+
 # **Hash ForLoop (located in hash folder)**
 ```
 Based on Hash Simple, wanted to combine everything to a single for loop which made the code sleeker and prints the same output.
@@ -131,6 +134,41 @@ Notes:
 getattr module seems to be very versatile in condensing code
 getattr module does not require the dot and parenthsis to be specified
 hashlib requires bytes input
+```
+
+# **Hash SHA1 Cracker (located in hash folder)**
+```
+Using a password list that contains the top 10000 passwords this python script will take a given SHA1 hash compute and compare it to the password list.
+
+Features:
+Colored output
+
+Usage:
+[*] Enter a SHA1 Hash Value: d6955d9721560531274cb8f50ff595a9bd39d66f
+[-] Password: 123456 doesn't match guess, continuing...
+[-] Password: password doesn't match guess, continuing... 
+[-] Password: 12345678 doesn't match guess, continuing...
+[+] The password is: joshua
+
+Password List:
+https://raw.githubusercontent.com/danielmiessler/SecLists/master/Passwords/Common-Credentials/10-million-password-list-top-100000.txt
+```
+
+# **Hash MD5 Cracker (located in hash folder)**
+```
+Using a password list from a specified file this python script will take a given MD5 hash compute and compare it to the password list.
+
+Features:
+Colored output
+
+Usage:
+[*] Enter a MD5 Hash Value: d1133275ee2118be63a577af759fc052
+[*] Enter the path of the password list: plist.txt
+[-] Trying Password: 123456 doesn't match, continuing...
+[-] Trying Password: password doesn't match, continuing...
+[-] Trying Password: 12345678 doesn't match, continuing...
+[-] Trying Password: qwerty doesn't match, continuing...
+[+] The password is: joshua
 ```
 
 [Back To Top](#cybersecurity-tools-coded-with-python-3)
