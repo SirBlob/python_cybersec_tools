@@ -3,17 +3,19 @@
 Tools for cybersecurity based on Udemy course "The Complete Python Hacking Course: Beginner to Advanced" by Joseph Delgadillo where I have updated the tools to a more modern format.
 
 ## Glossary
-1. [Port Scanner](#port-scanner)
-2. [Banner Grabber](#banner-grabber-located-in-portscanner-folder)
-3. [Vulnerable Banner Scanner](#vulnerable-banner-scanner)
-4. [SSH Login and Run Command](#ssh-login-and-run-command)
-5. [Bruteforce SSH Login](#bruteforce-ssh-login-located-in-sshlog-folder)
-6. [Anonymous FTP Login](#anonymous-ftp-login-located-in-ftp_login-folder)
-7. [Bruteforce FTP Login](#bruteforce-ftp-login-located-in-ftp_login-folder)
-8. [Hash Simple](#hash-simple)
-9. [Hash ForLoop](#hash-forloop-located-in-hash-folder)
-10. [Hash SHA1 Cracker](#hash-sha1-cracker-located-in-hash-folder)
-11. [Hash MD5 Cracker](#hash-md5-cracker-located-in-hash-folder)
+ 1 | 2
+------------ | -------------
+[Port Scanner](#port-scanner) | [Linux MAC Changer](#linux-mac-changer-located-in-spoofer-folder)
+[Banner Grabber](#banner-grabber-located-in-portscanner-folder) | [ARP Spoofer](#arp-spoofer)
+[Vulnerable Banner Scanner](#vulnerable-banner-scanner) |
+[SSH Login and Run Command](#ssh-login-and-run-command) |
+[Bruteforce SSH Login](#bruteforce-ssh-login-located-in-sshlog-folder) |
+[Anonymous FTP Login](#anonymous-ftp-login-located-in-ftp_login-folder) |
+[Bruteforce FTP Login](#bruteforce-ftp-login-located-in-ftp_login-folder) |
+[Hash Simple](#hash-simple) |
+[Hash ForLoop](#hash-forloop-located-in-hash-folder) |
+[Hash SHA1 Cracker](#hash-sha1-cracker-located-in-hash-folder) |
+[Hash MD5 Cracker](#hash-md5-cracker-located-in-hash-folder) |
 
 ============================================
 
@@ -170,6 +172,17 @@ Example:
 [-] Trying Password: 12345678 doesn't match, continuing...
 [-] Trying Password: qwerty doesn't match, continuing...
 [+] The password is: joshua
+```
+
+# **Linux MAC Changer (located in spoofer folder)**
+```
+Using the command ifconfig it will replace the current MAC Address to a specified one.
+```
+
+# **ARP Spoofer**
+```
+Automatically spoof the MAC Address to match target and sends packets through with the scapy module.
+Python script will continue to run unless interrupted and then restores the MAC Address to original state.
 ```
 
 [Back To Top](#cybersecurity-tools-coded-with-python-3)
