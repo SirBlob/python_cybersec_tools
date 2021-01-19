@@ -7,7 +7,7 @@ Tools for cybersecurity based on Udemy course "The Complete Python Hacking Cours
 ------------ | -------------
 [Port Scanner](#port-scanner) | [Linux MAC Changer](#linux-mac-changer-located-in-spoofer-folder)
 [Banner Grabber](#banner-grabber-located-in-portscanner-folder) | [ARP Spoofer](#arp-spoofer)
-[Vulnerable Banner Scanner](#vulnerable-banner-scanner) |
+[Vulnerable Banner Scanner](#vulnerable-banner-scanner) | [Sniffer](#sniffer)
 [SSH Login and Run Command](#ssh-login-and-run-command) |
 [Bruteforce SSH Login](#bruteforce-ssh-login-located-in-sshlog-folder) |
 [Anonymous FTP Login](#anonymous-ftp-login-located-in-ftp_login-folder) |
@@ -183,6 +183,15 @@ Using the command ifconfig it will replace the current MAC Address to a specifie
 ```
 Automatically spoof the MAC Address to match target and sends packets through with the scapy module.
 Python script will continue to run unless interrupted and then restores the MAC Address to original state.
+```
+
+# **Sniffer**
+```
+A sniffer is a tool that captures the packets that passes through the network it's monitoring.
+In the folder sniffer you will find two protocal sniffers FTP and HTTP which shows how easy it is to get the credentials if not properly secured.
+
+FTP
+HTTP
 ```
 
 [Back To Top](#cybersecurity-tools-coded-with-python-3)
