@@ -8,7 +8,7 @@ Tools for cybersecurity based on Udemy course "The Complete Python Hacking Cours
 [Port Scanner](#port-scanner) | [Linux MAC Changer](#linux-mac-changer-located-in-spoofer-folder)
 [Banner Grabber](#banner-grabber-located-in-portscanner-folder) | [ARP Spoofer](#arp-spoofer)
 [Vulnerable Banner Scanner](#vulnerable-banner-scanner) | [Sniffer](#sniffer)
-[SSH Login and Run Command](#ssh-login-and-run-command) | [DNS Query](#dns_queries)
+[SSH Login and Run Command](#ssh-login-and-run-command) | [DNS Query](#dns-queries)
 [Bruteforce SSH Login](#bruteforce-ssh-login-located-in-sshlog-folder) |
 [Anonymous FTP Login](#anonymous-ftp-login-located-in-ftp_login-folder) |
 [Bruteforce FTP Login](#bruteforce-ftp-login-located-in-ftp_login-folder) |
