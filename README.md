@@ -8,7 +8,7 @@ Tools for cybersecurity based on Udemy course "The Complete Python Hacking Cours
 [Port Scanner](#port-scanner) | [Linux MAC Changer](#linux-mac-changer-located-in-spoofer-folder)
 [Banner Grabber](#banner-grabber-located-in-portscanner-folder) | [ARP Spoofer](#arp-spoofer)
 [Vulnerable Banner Scanner](#vulnerable-banner-scanner) | [Sniffer](#sniffer)
-[SSH Login and Run Command](#ssh-login-and-run-command) |
+[SSH Login and Run Command](#ssh-login-and-run-command) | [DNS Query](#dns_queries)
 [Bruteforce SSH Login](#bruteforce-ssh-login-located-in-sshlog-folder) |
 [Anonymous FTP Login](#anonymous-ftp-login-located-in-ftp_login-folder) |
 [Bruteforce FTP Login](#bruteforce-ftp-login-located-in-ftp_login-folder) |
@@ -194,5 +194,18 @@ FTP
 HTTP
 Incoming Packet Sniffer (for more details check the sniffer folder)
 ```
+
+# **DNS Queries**
+```
+This script shows the DNS query exchange to resolve a FQDN to it's machine friendly IP address.
+
+Example:
+101.2.2.15 DNS Qry "b'github.com.'" 
+192.168.1.21 DNS Ans "140.82.120.4" 
+101.2.2.15 DNS Qry "b'github.githubassets.com.'" 
+101.2.2.15 DNS Qry "b'github.githubassets.com.'" 
+```
+
+
 
 [Back To Top](#cybersecurity-tools-coded-with-python-3)
