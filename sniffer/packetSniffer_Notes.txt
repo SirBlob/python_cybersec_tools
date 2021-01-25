@@ -1,0 +1,37 @@
+This script separates incoming packets into three fields [Ethernet, IP, TCP or UDP].
+
+Example:
+
+------------------------ETHERNET HEADER------------------------
+Destination MAC: f2:12:f0:12:f3:02
+Source MAC: f2:12:f0:12:f3:03
+Protocol: 8
+------------------------IP HEADER------------------------
+Version: 4
+IHL: 5
+TOS: 0
+Total Length: 40
+IP ID: 55807
+Flags: 2
+Frags Offset: 0
+IP TTL: 64
+IP Protocol: 6
+CheckSum: 22379
+Source Address: xxx.x.x.xxx
+Destination Address: xxx.x.x.xxx
+------------------------TCP HEADER------------------------
+Source Port: 14023
+Destination Port: 478
+Sequence Number: 4241286
+Acknowledge Number: 329638
+Data Offset: 1
+Reserved: 1023
+===Flags=== 
+URG: False
+ACK: True
+PUSH: False
+RESET: False
+SYNCHRONIZE: False
+FINISH: False
+Window Size: 65535
+CheckSum: 32777
