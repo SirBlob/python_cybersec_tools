@@ -199,6 +199,10 @@ Incoming Packet Sniffer (for more details check the sniffer folder)
 ```
 This script shows the DNS query exchange to resolve a FQDN to it's machine friendly IP address.
 
+Usage:
+Run Script and then refresh or go to a webpage.
+My example below is refreshing a github page.
+
 Example:
 101.2.2.15 DNS Qry "b'github.com.'" 
 192.168.1.21 DNS Ans "140.82.120.4" 
